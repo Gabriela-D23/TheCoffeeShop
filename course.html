@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo (1).png">
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+
+    <!------Course------->
+    <section class="course">
+        <h1>Accredited Courses</h1>
+        <p>Coffee is a way of making time that rightfully belongs to your older, wiser self.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Introduction to coffe</h3>
+                <p>Introduction to Coffee is an introductory course. The coffee skills programme consists of this
+                    introductory course and five modules: barista, brewing, green coffee, roasting and sensory skills.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Barista skills foundation</h3>
+                <p>The Barista Skills Foundation is part of the SCA Coffee Skills Program and is the first course in the
+                    module dedicated to espresso brewing.</p>
+            </div>
+            <div class="course-col">
+                <h3>Sensory skills foundation</h3>
+                <p>The Sensory Skills Foundation is part of the SCA Coffee Skills Program and is the first course in the
+                    module dedicated to sensory evaluation of coffee.</p>
+            </div>
+        </div>
+    </section>
+
+    <!---------Facilities----->
+
+    <section class="facilities">
+        <h1>Facilities in our coffee shop</h1>
+        <p>The atmosphere is relaxed, the food will spoil your taste buds and pets are welcome.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library in coffe shop.jpg">
+                <h3>Small bookshop</h3>
+                <p>With various coffee branches scattered throughout the downtown area, The coffee shop aims to be
+                    everyone's go-to place for reading and dining.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cookies in coffe shop.jpg">
+                <h3>Delicatessen</h3>
+                <p>If we talk about coffee, we can't not talk about the sweet products that often accompany it.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/Pet friendly in coffee shop.jpg">
+                <h3>Small bookshop</h3>
+                <p>We can't say no to a hearty dog walk followed by coffee, cake or even brunch in cafe.</p>
+            </div>
+        </div>
+    </section>
+
+    <!------Footer------->
+    <section class="footer">
+        <h4>About US</h4>
+        <p>The Coffe Shop is a community of unconditionally befriended, creative, educated, open-minded people sharing
+            experiences <br> and life stories while discreetly preparing all the details for a good coffee. We're
+            curious to
+            join <br> any conversation about coffee - pay us a visit.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>All rights reserved The Coffe Shop <i class="fas fa-heart"></i></p>
+    </section>
+
+    <!-----JavaScript for Toggle Menu----->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>

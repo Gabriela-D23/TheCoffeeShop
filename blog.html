@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo (1).png">
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>For the passionate</h1>
+    </section>
+    <!------blog page content------>
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/for passionate.jpg">
+                <h2>Myths about coffee</h2>
+                <p>Coffee is among the most popular beverages in the world, second only to water. Over time, many myths
+                    have developed about the benefits of coffee.</p>
+
+                <p>Let's see which ones are true.
+                    <br>
+                    1. Coffee is a very good energizer if you drink it before a physical effort or at the beginning of a
+                    hard day - TRUE. But be careful!
+                    It is not recommended to drink coffee on an empty stomach.
+                    <br>
+                    2. Coffee is not fattening, but keeps the body in balance - TRUE. This is true if it is black,
+                    without sugar or milk.
+                    <br>
+                    3. Coffee is a good concentration aid and improves short-term memory - TRUE.
+                    <br>
+                    4. Coffee is a good antioxidant - TRUE. According to an American study, coffee provides the body
+                    with more antioxidants than fruits and vegetables.
+                    <br>
+                    5. It helps digestion and you can lose weight - TRUE. Coffee helps burn fat and boosts your
+                    metabolic rate.
+                    <br>
+                    6. Helps fight migraines - TRUE. The effect of caffeine on these unpleasant conditions is
+                    scientifically proven. A little trick: pour lemon juice into your coffee for maximum results.
+                    <br>
+                    7. Gets rid of cellulite - TRUE. Most anti-cellulite creams contain caffeine.
+                    <br>
+                    8. Coffee dehydrates - MIT. Coffee is a daily source of hydration when consumed in moderate amounts.
+                    <br>
+                    9. Coffee is not recommended during pregnancy - MIT. Studies have shown that moderate coffee
+                    consumption has no harmful effect on the unborn child. However, take care to eat properly!
+                    <br>
+                    10. Coffee is good after alcohol consumption - MIT. After drinking a large amount of alcohol, coffee
+                    is contraindicated because it makes you feel worse.</p>   
+                    
+                <p>So how do you drink your coffee?</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                            <button type="submit" class="hero-btn brown-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+            <h3>For passionate</h3>
+            <div>
+                <span>Introduction to coffee</span>
+                <span>8</span>
+            </div>
+            <div>
+                <span>Latte art orientation</span>
+                <span>7</span>
+            </div>
+            <div>
+                <span>Espresso orientation</span>
+                <span>7</span>
+            </div>
+            <div>
+                <span>Sensory orientation</span>
+                <span>4</span>
+            </div>
+            <div>
+                <span>Brewing orientation</span>
+                <span>4</span>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!------Footer------->
+    <section class="footer">
+        <h4>About US</h4>
+        <p>The Coffe Shop is a community of unconditionally befriended, creative, educated, open-minded people sharing
+            experiences <br> and life stories while discreetly preparing all the details for a good coffee. We're
+            curious to
+            join <br> any conversation about coffee - pay us a visit.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>All rights reserved The Coffe Shop <i class="fas fa-heart"></i></p>
+    </section>
+
+    <!-----JavaScript for Toggle Menu----->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>
